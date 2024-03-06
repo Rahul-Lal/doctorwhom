@@ -1,1 +1,13 @@
+body {
+    background-image: url("https://www.desktopbackground.org/p/2012/05/05/384902_tardis-wallpaper-you-said-you-wanted-london-603238-4658401-png_1920x1200_h.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 25px;
+    font-family: sans-serif;
+}
 
+#imgMain {
+    width: 750px;
+    height: 330px;
+}
