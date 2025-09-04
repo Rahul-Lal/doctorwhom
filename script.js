@@ -1,8 +1,8 @@
 function regenerate() {
-    let numba = Math.floor(Math.random() * 18) + 1;
+    let numba = Math.floor(Math.random() * 18);
     let imgMain = document.getElementById("imgMain");
 
-    let dicaption = ["1", "2", "Fugitive", "3", "4", "5", "6", "7", "8", "War", "9", "10", "Meta-Crisis", "11", "12", "13", "14", "15"];
+    let dicaption = ["First Doctor", "Second Doctor", "Fugitive Doctor", "Third Doctor", "Fourth Doctor", "Fifth Doctor", "Sixth Doctor", "Seventh Doctor", "Eighth Doctor", "War Doctor", "Ninth Doctor", "Tenth Doctor", "Meta-Crisis Doctor", "Eleventh Doctor", "Twelfth Doctor", "Thirteenth Doctor", "Fourteenth Doctor", "Fifteenth Doctor"];
 
     let dimages = [
         "https://cms.doctorwho.tv/sites/default/files/2022-03/1st%20Doctor%20-%201920x1080.jpg",
@@ -17,7 +17,7 @@ function regenerate() {
         "https://cms.doctorwho.tv/sites/default/files/2022-03/War%20Doctor%20-%201920x1080.jpg",
         "https://cms.doctorwho.tv/sites/default/files/2022-03/9th%20Doctor%20-%201920x1080.jpg",
         "https://cms.doctorwho.tv/sites/default/files/2022-03/10th%20Doctor%20-%201920x1080.jpg",
-        "https://www.basicstuffmagazine.com/wp-content/uploads/2019/07/doctor_who_2005_s04e13_1080p_bluray_x264-shortbrehd_1745.jpg",
+        "https://images.immediate.co.uk/production/volatile/sites/3/2017/11/David_Tennant_as_Dr_Who-d577db5.jpg",
         "https://cms.doctorwho.tv/sites/default/files/2022-03/11th%20Doctor%20-%201920x1080.jpg",
         "https://cms.doctorwho.tv/sites/default/files/2022-03/12th%20Doctor%20-%201920x1080.jpg",
         "https://cms.doctorwho.tv/sites/default/files/2022-03/13th%20Doctor%20-%201920x1080.jpg",
@@ -26,6 +26,8 @@ function regenerate() {
     ];
 
     console.log(dicaption[numba] + ": " + dimages[numba]);
+    console.log(numba);
     imgMain.src = dimages[numba];
     imgMain.alt = dicaption[numba];
+    document.getElementById("doctorName").innerText = dicaption[numba];
 }
